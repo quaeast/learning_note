@@ -3,7 +3,7 @@
 ## 初始化
 
 ```
-git init				# 文件夹内部
+git init				  # 文件夹内部
 git init <dir>			# 文件夹外部，生成空项目
 ```
 
@@ -22,7 +22,7 @@ got config --global user.email "email"
 
 git 有三个工作区域，工作区，暂存区(stage)，历史区。
 
-### 工作区到暂存区
+### 暂存区
 
 
 #### git status
@@ -48,7 +48,7 @@ git add -u	# 不更新新文件，只更新删除和修改
 
 ```
 git rm --cache <filename>		# 只删除暂存区
-git rm -f <filename>			# 删除全部
+git rm -f <filename>			 # 删除全部
 ```
 另一种删除全部的方法
 
@@ -80,34 +80,38 @@ git add <new filename>
 git rm <olf filename>
 ```
 
-### 暂存区到历史区
+### 历史区
 
 #### git commit
 
 ```
+# 提交
 git commit -m "message"
 git commit -am "message"	#跳过暂存区直接提交
+
+# 修改(变更)最近提交信息
+git commit --amend
 ```
 #### git reset
 
 ```
-git reset		# 默认模式为mixed，恢复点为HEAD指针
+git reset               # 默认模式为mixed，恢复点为HEAD指针
 git reset <hush>		# 指定恢复点
 
 # 恢复模式
 
---soft		# 不更改工作区和暂存区
---mixed	# 不更改工作区，但是清空暂存区（默认模式）
---hard		# 更改工作区和，清空暂存区。（但是工作区新增的文件一般不会删除，但这个也不一定）
+--soft                  # 不更改工作区和暂存区
+--mixed                 # 不更改工作区，但是清空暂存区（默认模式）
+--hard                  # 更改工作区和，清空暂存区。（但是工作区新增的文件一般不会删除，但这个也不一定）
 ```
 
 #### git log
 
 ```
-git log --oueline # 简洁显示
-git log -n4	# 最近的四个
-git log --all/-a	# 显示所有
-git log --graph	## 图形显示
+git log --oneline       # 简洁显示
+git log -n4             # 最近的四个
+git log --all/-a        # 显示所有
+git log --graph         # 图形显示
 ```
 
 ### 分支
@@ -115,11 +119,16 @@ git log --graph	## 图形显示
 #### git branch
 
 ```
+# 显示分支
 git branch -v		# verbose 长
-git branch -a 	# 包括远程
+git branch -a 	   # 包括远程
 
 # 创建新分支，但是不切换
 git branch <new branch_name>
+
+# 删除分支
+git branch -d <hush>	# merge 过的
+git branch -D <hush>	# 没 merge 过的，强制删除
 ```
 
 #### git checkout
@@ -129,7 +138,7 @@ git branch <new branch_name>
 git checkout <branch_name>
 
 # 创建新分支，并切换
-git checkout -b <branch_name> 
+git checkout -b <branch_name>
 
 # 分离头指针
 git checkout <commit_hush>
@@ -143,6 +152,8 @@ git checkout <commit_hush>
 ### 分离头指针（attached head）
 
 ~ 是指使用 checkout 将头指针指向 commit 而不是分支。这样头指针就不属于任何分支，但是正常 commit。如果有用可以后期把他附到分支上，如果没有用可以直接 checkout 到分支，将其丢弃。
+
+其实分支的 hush 本身也是 commit，但是分支的头部 commit 能够代表分支。
 
 ```
 # 分离头指针
@@ -160,14 +171,9 @@ git object 有三类:
 * tree
 * blob
 
-![](./img/commit_tree_blob.png) 
+![](./img/commit_tree_blob.png)
 
 ```
 git cat-file -t <hush>		#查看文件类型
 git cat-file -p <hush>		#查看文件内容
 ```
-
-
-
-
-
