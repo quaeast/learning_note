@@ -144,7 +144,13 @@ git checkout -b <branch_name>
 git checkout <commit_hush>
 ```
 
+#### gir rebase 
 
+```
+git rebase -i <hush>
+```
+
+这里面的 `-i` 后面的 `<hush>` 是当前值的父亲。
 
 
 ## git 高级
@@ -171,9 +177,22 @@ git object 有三类:
 * tree
 * blob
 
-![](./img/commit_tree_blob.png)
+<!--![](./img/commit_tree_blob.png)-->
 
 ```
 git cat-file -t <hush>		#查看文件类型
 git cat-file -p <hush>		#查看文件内容
 ```
+
+## git rebase（变基）
+
+### 变更历史提交信息
+
+```
+git rebase -i <father hush>
+```
+
+<!--![rb1_1](./img/rb1_1.png)
+![rb1_2](./img/rb1_2.png)
+![rb1_3](./img/rb1_3.png)
+![rb1_4](./img/rb1_4.png)-->
