@@ -1,5 +1,7 @@
 # git学习笔记
 
+推荐使用[Gitkraken](https://www.gitkraken.com/)查看图形化 git 历史，更加直观。
+
 ## 初始化
 
 ```
@@ -157,13 +159,20 @@ git checkout -- <filename1> <filename2>
 git merge <remote_name>/<branch_name>
 ```
 
-#### git rebase 
+#### git rebase
 
 ```
 git rebase -i <hush>
 ```
 
 这里面的 `-i` 后面的 `<hush>` 是当前值的父亲。
+
+#### git clone
+
+```
+# 注意地址是 .git 文件夹的地址
+git clone <remote_address>
+```
 
 #### git remote
 
@@ -182,7 +191,25 @@ git rename <old> <new>
 #### git fetch
 
 ```
-git fetch <remote_name> <branch_name>
+git fetch <remote_name> <branch_name>...
+```
+
+#### git pull
+
+```
+git fetch <remote_name> <branch_name>...
+```
+
+#### git push
+
+```
+git fetch <remote_name> <branch_name>...
+```
+
+注意：push是remote报错，在远端设置：
+
+```
+git config receive.denyCurrentBranch ignore
 ```
 
 ## git rebase（变基）
@@ -199,7 +226,7 @@ git rebase -i <father hush>
 ![rb1_4](./img/rb1_4.png)
 
 
-## git 高级
+## git 高级：进入 .git
 
 ### 分离头指针（attached head）
 
@@ -231,4 +258,4 @@ git cat-file -p <hush>		#查看文件内容
 ```
 ### .git/config
 
-`remote`，`username` 等信息都存储在这个文件中，可以直接对这个文件更改。 
+`remote`，`username` 等信息都存储在这个文件中，可以直接对这个文件更改。
