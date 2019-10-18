@@ -142,9 +142,18 @@ git checkout -b <branch_name>
 
 # 分离头指针
 git checkout <commit_hush>
+
+# 恢复某个文件
+git checkout -- <filename1> <filename2>
 ```
 
-#### gir rebase 
+### git merge
+
+示意图
+
+![](./img/merge.png)
+
+#### git rebase 
 
 ```
 git rebase -i <hush>
