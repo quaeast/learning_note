@@ -147,11 +147,15 @@ git checkout <commit_hush>
 git checkout -- <filename1> <filename2>
 ```
 
-### git merge
+#### git merge
 
 示意图
 
 ![](./img/merge.png)
+
+```
+git merge <remote_name>/<branch_name>
+```
 
 #### git rebase 
 
@@ -161,6 +165,15 @@ git rebase -i <hush>
 
 这里面的 `-i` 后面的 `<hush>` 是当前值的父亲。
 
+#### git remote
+
+```
+# 查看远程服务器
+git remote -v
+
+# 添加远程服务器
+git remote add <address>
+```
 
 ## git 高级
 
