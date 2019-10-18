@@ -173,7 +173,31 @@ git remote -v
 
 # 添加远程服务器
 git remote add <address>
+
+git remove <remote_name>
+
+git rename <old> <new>
 ```
+
+#### git fetch
+
+```
+git fetch <remote_name> <branch_name>
+```
+
+## git rebase（变基）
+
+### 变更历史提交信息
+
+```
+git rebase -i <father hush>
+```
+
+![rb1_1](./img/rb1_1.png)
+![rb1_2](./img/rb1_2.png)
+![rb1_3](./img/rb1_3.png)
+![rb1_4](./img/rb1_4.png)
+
 
 ## git 高级
 
@@ -199,22 +223,12 @@ git object 有三类:
 * tree
 * blob
 
-<!--![](./img/commit_tree_blob.png)-->
+![](./img/commit_tree_blob.png)
 
 ```
 git cat-file -t <hush>		#查看文件类型
 git cat-file -p <hush>		#查看文件内容
 ```
+### .git/config
 
-## git rebase（变基）
-
-### 变更历史提交信息
-
-```
-git rebase -i <father hush>
-```
-
-<!--![rb1_1](./img/rb1_1.png)
-![rb1_2](./img/rb1_2.png)
-![rb1_3](./img/rb1_3.png)
-![rb1_4](./img/rb1_4.png)-->
+`remote`，`username` 等信息都存储在这个文件中，可以直接对这个文件更改。 
