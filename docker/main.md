@@ -1,50 +1,120 @@
-# [return](../README.md)
+### [return](../README.md)
 
 # docker 
 
 ## image
 
 ```bash
-// 拉取镜像
+# 拉取镜像
 docker pull [name/id]
 
-// 展示本地镜像
+# 展示本地镜像
 docker image ls
 
-// 删除本地镜像
+# 删除本地镜像
 docker image rm [name/id]
 ```
 
 ## container
 
 ```bash
-// 运行镜像，用于初次启动，参数为 image name/id 
+# 运行镜像，用于初次启动，参数为 image name/id 
 docker run [name/id]
 
-// 运行停止的 container
+-d 后台
+-p [本机 post]:[docker post]
+
+# 运行停止的 container
 docker start [name/id]
 
-// 重启 container
+# 重启 container
 docker restart [name/id]
 
-// 停止 container
+# 停止 container
 docker stop [name/id]
 
-// 删除 container
+# 删除 container
 docker rm [name/id]
 
-// 后台运行
-ctrl +p+q
+# 后台运行
+ctrl + pq
 ```
 
 ## dockerfile
 
 ```
-FROM node:8.16.1
+FROM hub.c.163.com/nce2/nodejs:0.12.2  # Create app directory
 
-RUN node:8.16.1
+RUN mkdir -p /home/Service
 
-COPY helo.js /src
+WORKDIR /home/Service    # Bundle app source
 
-CMD [“node”, “/src/helo.js”]
+COPY . /home/Service
+
+RUN npm install
+
+EXPOSE 8888
+
+CMD npm start 
 ```
+
+## Demo: run a hello node app
+
+### index.js
+
+```js
+'use strict';
+var express = require('express');
+var PORT = 8888;
+var app = express();
+app.get('/', function (req, res) {
+    res.send('Helloworld\n');
+});
+app.listen(PORT);
+console.log('Running on http://localhost:' + PORT);
+```
+
+### package.json
+
+```json
+{
+  "name": "docker_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "fangzidong",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
+```
+
+### Dockerfile
+
+```
+FROM node:10
+RUN mkdir -p /home/Service
+WORKDIR /home/Service
+COPY ./index.js /home/Service
+COPY ./package.json /home/Service
+RUN npm install
+EXPOSE 8888
+CMD npm start
+```
+
+### commands
+
+```bash
+docker build . -t mynodeapp
+```
+
+```bash
+docker run -p 8880:8888 mynodeapp
+```
+
+### [return](../README.md)

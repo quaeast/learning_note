@@ -1,4 +1,4 @@
-# [return](../README.md)
+### [return](../README.md)
 
 # git学习笔记
 
@@ -261,3 +261,5 @@ git cat-file -p <hush>		#查看文件内容
 ### .git/config
 
 `remote`，`username` 等信息都存储在这个文件中，可以直接对这个文件更改。
+
+### [return](../README.md)
