@@ -164,7 +164,7 @@ git merge <remote_name>/<branch_name>
 #### git rebase
 
 ```
-git rebase -i <hush>
+git rebase -i <hush>/--root
 ```
 
 这里面的 `-i` 后面的 `<hush>` 是当前值的父亲。
