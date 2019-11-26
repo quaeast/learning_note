@@ -1,6 +1,8 @@
-# Spring
+### [return](../README.md)
 
-## Spring boot 入门黑魔法
+# Spring Boot
+
+## 入门: Spring Boot 黑魔法
 
 ### Mac 安装 Spring boot cli
 
@@ -34,3 +36,5 @@ class ThisWillActuallyRun {
 # 首次运行会自动下载依赖而等待很久，耐心等待
 spring run app.groovy
 ```
+
+### [return](../README.md)
