@@ -6,6 +6,10 @@
 /Library/Java/JavaVirtualMachines
 ```
 
+安装Jdk: 直接从 Oracle 下载 Jdk 解压之后放到这个文件夹下面即可。
+
+环境变量配置与切换：使用 jenv 。
+
 ## jenv 安装 
 
 ### brew
