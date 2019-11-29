@@ -61,3 +61,35 @@ jenv shell oracle64-1.6.0.39
 # 移除
 jenv remove oracle64-1.6.0.39
 ```
+
+# 疑问
+
+## 在使用 jenv 切换版本后 mvn -v 显示的 java 版本并不会改变，这是怎么回事呢？
+
+
+```
+➜  .m2 mvn -v
+Apache Maven 3.6.2 (40f52333136460af0dc0d7232c0dc0bcf0d9e117; 2019-08-27T23:06:16+08:00)
+Maven home: /usr/local/Cellar/maven/3.6.2/libexec
+Java version: 13.0.1, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home
+Default locale: en_CN, platform encoding: UTF-8
+OS name: "mac os x", version: "10.15.1", arch: "x86_64", family: "mac"
+➜  .m2 /usr/bin/java --version
+java 13.0.1 2019-10-15
+Java(TM) SE Runtime Environment (build 13.0.1+9)
+Java HotSpot(TM) 64-Bit Server VM (build 13.0.1+9, mixed mode, sharing)
+➜  .m2 java -version
+java version "11.0.5" 2019-10-15 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.5+10-LTS)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.5+10-LTS, mixed mode)
+➜  .m2 which java
+/Users/fang/.jenv/shims/java
+➜  .m2
+```
+
+我猜，这个版本是和，`/usr/bin/java` 的版本一致。
+
+这个真的不好验证，因为在 Mac 里即便是 root 用户，也没办法修改这个软连接和他指向的文件。但是 homebrew 却有权限，真是神奇啊。
+
+
+  
