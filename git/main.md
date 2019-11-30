@@ -158,7 +158,10 @@ git checkout -- <filename1> <filename2>
 ![](./img/merge.png)
 
 ```
+# merge 可以写一个分支，代表把这个分支和当前分支合并。也可以写两个，代表合并这两个分支
 git merge <remote_name>/<branch_name>
+
+git merge <branch A> <branch B>
 ```
 
 #### git rebase

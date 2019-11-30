@@ -14,7 +14,7 @@
 
 ### brew
 
-```bash
+```zsh
 brew install jenv
 ```
 
@@ -24,7 +24,7 @@ brew install jenv
 
 [jenv.be](https://www.jenv.be/)
 
-```bash
+```zsh
 git clone https://github.com/gcuisinier/jenv.git ~/.jenv
 ```
 
@@ -32,14 +32,14 @@ git clone https://github.com/gcuisinier/jenv.git ~/.jenv
 
 在 .zshrc 或者 .bash_profile 中加入一下内容完成配置
 
-```
+```bash
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 ```
 
 ## jenv 使用
 
-```bash
+```zsh
 # 添加
 jenv add /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
 
@@ -67,7 +67,7 @@ jenv remove oracle64-1.6.0.39
 ## 在使用 jenv 切换版本后 mvn -v 显示的 java 版本并不会改变，这是怎么回事呢？
 
 
-```
+```zsh
 ➜  .m2 mvn -v
 Apache Maven 3.6.2 (40f52333136460af0dc0d7232c0dc0bcf0d9e117; 2019-08-27T23:06:16+08:00)
 Maven home: /usr/local/Cellar/maven/3.6.2/libexec
@@ -87,9 +87,9 @@ Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.5+10-LTS, mixed mode)
 ➜  .m2
 ```
 
-我猜，这个版本是和，`/usr/bin/java` 的版本一致。
+我猜，这个版本是和 `/usr/bin/java` 的版本一致。
 
-这个真的不好验证，因为在 Mac 里即便是 root 用户，也没办法修改这个软连接和他指向的文件。但是 homebrew 却有权限，真是神奇啊。
+这个真的不好验证，因为在 Mac 里即便是 root 用户，也没办法修改这个软连接和他指向的文件，但是 homebrew 却有权限，真是神奇。
 
 
   
