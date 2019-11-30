@@ -26,6 +26,8 @@ got config --global user.email "email"
 
 git 有三个工作区域，工作区，暂存区(stage)，历史区。
 
+![workflow](./img/workflow.png)
+
 ### 暂存区
 
 
@@ -48,13 +50,15 @@ git add -u	# 不更新新文件，只更新删除和修改
 
 #### git rm
 
-注意删除文件夹的时候要加参数 `-r`，如果工作区中文件已经被删除，那么删除暂存区中的文件就不需要加 `-f`。
+注意删除文件夹的时候要加参数 `-r`，如果工作区中文件已经被删除，那么删除 stage 中的文件就不需要加 `-f`。
 
 ```
-git rm --cache <filename>		# 只删除暂存区
-git rm -f <filename>			 # 删除全部
+# 从结果的角度考虑：就是不删除工作区的内容，让这个文件不出现在缓存区和和本次 commit 的历史区。
+git rm --cache <filename>		
+git rm -f <filename>			 # 删除全部 (stage 和工作区)
 ```
-另一种删除全部的方法
+
+另一种删除全部的方法，即先删工作区再删 stage
 
 ```
 rm <fileneme>
@@ -147,7 +151,7 @@ git checkout -b <branch_name>
 # 分离头指针
 git checkout <commit_hush>
 
-# 恢复某个文件
+# 恢复某个文件和暂存区一样
 git checkout -- <filename1> <filename2>
 ```
 
