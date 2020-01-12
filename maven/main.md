@@ -12,6 +12,8 @@
 mvn archetype:generate
 ```
 
+接下来按照提示选择第 7 个，即输入 7。
+
 ```
 [INFO] Scanning for projects...
 [INFO]
@@ -45,7 +47,7 @@ Choose archetype:
 Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): 7:
 ```
 
-在这里我根据从提示选择第 7 个，即输入 7。
+根据提示设置项目属性，最后输入 `y` 确认。
 
 ```
 Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): 7: 7
@@ -61,7 +63,7 @@ package: cn.quaeast
  Y: :
 ```
 
-根据提示设置项目属性，最后输入 `y` 确认。
+输入 `y`之后，mvn开始构建，输出构建成功的结果如下
 
 ```
  Y: : y
@@ -83,8 +85,6 @@ package: cn.quaeast
 [INFO] ------------------------------------------------------------------------
 ```
 
-构建成功的结果
-
 ### 构建
 
 设置 java 版本，在 pom.xml 中加入：
@@ -101,6 +101,8 @@ package: cn.quaeast
 ```bash
 mvn compile
 ```
+
+编译成功的输出结果
 
 ```
 [INFO] Scanning for projects...
@@ -123,13 +125,13 @@ mvn compile
 [INFO] ------------------------------------------------------------------------
 ```
 
-编译成功的结果
-
 运行程序
 
 ```bash
 mvn exec:java -Dexec.mainClass="cn.quaeast.App"
 ```
+
+输出正确结果：Hello World!
 
 ```
 [INFO] Scanning for projects...
@@ -148,4 +150,24 @@ Hello World!
 [INFO] ------------------------------------------------------------------------
 ```
 
-输出正确结果：Hello World!
+## 使用lombok
+
+在 pom.xml 中添加依赖：
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.10</version>
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
+```
+
+测试
+
+```bash
+mvn test
+```
+
