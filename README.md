@@ -12,21 +12,25 @@
 
 ## Java
 
-### [Jar](./jar/main.md)
+### [Jar](./java/jar/main.md)
 
-### [Jenv](./jenv/main.md)
+### [Jenv](./java/jenv/main.md)
 
-### [Spring Boot](./spring_boot/main.md)
+### [Spring Boot](./java/spring_boot/main.md)
 
-### [Maven](./maven/main.md)
+### [Maven](./java/maven/main.md)
 
 ## Node
 
 ## OPS
 
-### [PostgreSql 安装及远程连接](./postgresql/main.md)
+### [PostgreSql 安装及远程连接](./ops/postgresql/main.md)
 
-### [Linux 二进制安装 Node](./linux_install_node/main.md)
+### [Linux 安装二进制 Node](./ops/linux_install_node/main.md)
+
+### [screen Cannot open your terminal '/dev/pts/1'](./ops//screen_Cannot_open_your_terminal/main.md)
+
+
 
 
 
