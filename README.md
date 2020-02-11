@@ -10,6 +10,8 @@
 
 ### [Sercive](./service/main.md)
 
+### [apt](./ops/apt/main.md)
+
 ## Java
 
 ### [Jar](./java/jar/main.md)
@@ -28,9 +30,9 @@
 
 ### [Linux 安装二进制 Node](./ops/linux_install_node/main.md)
 
-### [screen Cannot open your terminal '/dev/pts/1'](./ops//screen_Cannot_open_your_terminal/main.md)
+### [screen Cannot open your terminal '/dev/pts/1'](./ops/screen_Cannot_open_your_terminal/main.md)
 
-
+### [本地 DNS：解决 github.com 不可访问](./ops/local_dns/main.md)
 
 
 

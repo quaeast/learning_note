@@ -1,4 +1,6 @@
-# Linux 安装二进制 Node
+# Linux 安装 Node
+
+## 二进制安装
 
 ```bash
 # 从 https://nodejs.org/en/download/ 下载软件
@@ -32,3 +34,8 @@ usr 不是user缩写，而是，`unix system resource` 缩写。
 `.xz` 使用参数 `-J` 进行解压
 
 `.gz` 使用参数 `-z` 进行解压
+
+## 包管理安装
+
+参考 [官方发布](https://github.com/nodesource/distributions)
+
