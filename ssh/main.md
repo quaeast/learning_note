@@ -1,6 +1,6 @@
-### [return](../README.md)
-
 # ssh 配置方法
+
+## 客户端
 
 ### 生成秘钥
 
@@ -41,5 +41,31 @@ Host da
     PreferredAuthentications password
 ```
 
-### [return](../README.md)
+## 服务器端
+
+### 公钥添加位置
+
+```bash
+~/.ssh/authorized_keys
+```
+
+### 配置选项
+
+```
+# 秘钥登录
+RSAAuthentication yes
+PubkeyAuthentication yes
+
+# root远程登录
+PermitRootLogin yes
+
+# 密码登录
+PasswordAuthentication no
+```
+### 重启服务
+
+```bash
+service sshd restart
+```
+
 
