@@ -3,6 +3,11 @@
 *  [官方预览](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
 *  [官方教程](http://maven.apache.org/guides/getting-started/index.html)
 
+## Tips
+
+* maven 对应的Java目录可以通过环境变量 `JAVA_HOME` 设置
+* 如果出现 lifecycle 运行不成功检查 pom.xml 规定的 Java 版本和 `JAVA_HOME` 是否对应
+
 ## hello world
 
 ### 生成空项目

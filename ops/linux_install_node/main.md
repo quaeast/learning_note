@@ -21,6 +21,10 @@ ln -s /usr/local/lib/node-v12.15.0-linux-x64/bin/npm /usr/bin/npm
 ln -s /usr/local/lib/node-v12.15.0-linux-x64/bin/node /usr/bin/node
 ```
 
+## 包管理安装
+
+参考 [官方发布](https://github.com/nodesource/distributions)
+
 ## 附录
 
 ### 1
@@ -34,8 +38,4 @@ usr 不是user缩写，而是，`unix system resource` 缩写。
 `.xz` 使用参数 `-J` 进行解压
 
 `.gz` 使用参数 `-z` 进行解压
-
-## 包管理安装
-
-参考 [官方发布](https://github.com/nodesource/distributions)
 
