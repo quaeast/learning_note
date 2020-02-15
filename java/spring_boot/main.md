@@ -1,5 +1,3 @@
-### [return](../README.md)
-
 # Spring Boot
 
 ## 入门: Spring Boot 黑魔法
@@ -71,4 +69,6 @@ Resolving dependencies..........................................................
 
 进入 [http://localhost:8080/](http://localhost:8080/) 查看成果
 
-### [return](../README.md)
+## Restful Api
+
+loook up [example](https://github.com/quaeast/simple-restful).
