@@ -60,6 +60,12 @@ jenv shell oracle64-1.6.0.39
 
 # 移除
 jenv remove oracle64-1.6.0.39
+
+# 检测
+jenv doctor
+
+# 设置 JAVA_HOME，运行后需要重启
+jenv enable-plugin export
 ```
 
 # 疑问
@@ -87,9 +93,8 @@ Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.5+10-LTS, mixed mode)
 ➜  .m2
 ```
 
-我猜，这个版本是和 `/usr/bin/java` 的版本一致。
-
-这个真的不好验证，因为在 Mac 里即便是 root 用户，也没办法修改这个软连接和他指向的文件，但是 homebrew 却有权限，真是神奇。
+在没有`JAVA_HOME`环境变量时，版本是和 `/usr/bin/java` 的版本一致。所以设置 `JAVA_HOME` 环境变量即可。
 
 
-  
+
+
