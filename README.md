@@ -12,6 +12,8 @@
 
 ### [apt](./ops/apt/main.md)
 
+###[curl](./ops/curl/main.md)
+
 ## Java
 
 ### [Jar](./java/jar/main.md)
@@ -23,6 +25,8 @@
 ### [Maven](./java/maven/main.md)
 
 ## OPS
+
+### [Python requests](./ops/requests/main.md)
 
 ### [PostgreSql 安装及远程连接](./ops/postgresql/main.md)
 

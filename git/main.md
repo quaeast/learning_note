@@ -122,6 +122,20 @@ git log --all/-a        # 显示所有
 git log --graph         # 图形显示
 ```
 
+### git tag
+
+```bash
+# show
+git tag
+# add a tag
+git tag -a tag-name -m "tag message"
+# delete a tag
+git tag -d tag-name
+
+```
+
+
+
 ### 分支
 
 #### git branch
