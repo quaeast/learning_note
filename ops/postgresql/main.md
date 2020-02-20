@@ -65,6 +65,14 @@ listen_addresses = '*'
 host all all all md5
 ```
 
+重启服务
+
+```bash
+sudo service postgresql restart
+```
+
+
+
 ## 远程测试
 
 ### 远程端口扫描

@@ -1,19 +1,17 @@
-### [return](../README.md)
-
 # git学习笔记
 
 推荐使用[Gitkraken](https://www.gitkraken.com/)查看图形化 git 历史，更加直观。
 
 ## 初始化
 
-```
+```bash
 git init				  # 文件夹内部
 git init <dir>			# 文件夹外部，生成空项目
 ```
 
 ## config 配置
 
-```
+```bash
 # 显示config
 git config --local/--global/--system --list/-l
 
@@ -35,7 +33,7 @@ git 有三个工作区域，工作区，暂存区(stage)，历史区。
 
 查看暂存区状态
 
-```
+```bash
 git status
 ```
 
@@ -43,7 +41,7 @@ git status
 
 向暂存区添加文件
 
-```
+```bash
 git add -A	# 所有更改
 git add -u	# 不更新新文件，只更新删除和修改
 ```
@@ -52,7 +50,7 @@ git add -u	# 不更新新文件，只更新删除和修改
 
 注意删除文件夹的时候要加参数 `-r`，如果工作区中文件已经被删除，那么删除 stage 中的文件就不需要加 `-f`。
 
-```
+```bash
 # 从结果的角度考虑：就是不删除工作区的内容，让这个文件不出现在缓存区和和本次 commit 的历史区。
 git rm --cache <filename>		
 git rm -f <filename>			 # 删除全部 (stage 和工作区)
@@ -60,7 +58,7 @@ git rm -f <filename>			 # 删除全部 (stage 和工作区)
 
 另一种删除全部的方法，即先删工作区再删 stage
 
-```
+```bash
 rm <fileneme>
 git rm <filename>
 ```
@@ -71,18 +69,18 @@ git rm <filename>
 
 名命名文件，并直接将记录添加到暂存区
 
-```
+```bash
 git mv <old filename> <new filename>
 ```
 
 也可以
 
-```
+```bash
 mv <old filename> <new filename>
 git add -A
 ```
 
-```
+```bash
 mv <old filename> <new filename>
 git add <new filename>
 git rm <olf filename>
@@ -92,7 +90,7 @@ git rm <olf filename>
 
 #### git commit
 
-```
+```bash
 # 提交
 git commit -m "message"
 git commit -am "message"	#跳过暂存区直接提交
@@ -102,7 +100,7 @@ git commit --amend
 ```
 #### git reset
 
-```
+```bash
 git reset               # 默认模式为mixed，恢复点为HEAD指针
 git reset <hush>		# 指定恢复点
 
@@ -115,7 +113,7 @@ git reset <hush>		# 指定恢复点
 
 #### git log
 
-```
+```bash
 git log --oneline       # 简洁显示
 git log -n4             # 最近的四个
 git log --all/-a        # 显示所有
@@ -128,10 +126,14 @@ git log --graph         # 图形显示
 # show
 git tag
 # add a tag
-git tag -a tag-name -m "tag message"
+git tag -a <tag-name> -m "tag message"
+# push to remote 
+git push origin <tag>
+git push origin --tags
 # delete a tag
-git tag -d tag-name
-
+git tag -d <tag-name>
+# push to remote 
+git push origin :refs/tags/v0.1.2
 ```
 
 
@@ -140,7 +142,7 @@ git tag -d tag-name
 
 #### git branch
 
-```
+```bash
 # 显示分支
 git branch -v		# verbose 长
 git branch -a 	   # 包括远程
@@ -155,7 +157,7 @@ git branch -D <hush>	# 没 merge 过的，强制删除
 
 #### git checkout
 
-```
+```bash
 # 切换分支
 git checkout <branch_name>
 
@@ -175,7 +177,7 @@ git checkout -- <filename1> <filename2>
 
 ![](./img/merge.png)
 
-```
+```bash
 # merge 可以写一个分支，代表把这个分支和当前分支合并。也可以写两个，代表合并这两个分支
 git merge <remote_name>/<branch_name>
 
@@ -184,7 +186,7 @@ git merge <branch A> <branch B>
 
 #### git rebase
 
-```
+```bash
 git rebase -i <hush>/--root
 ```
 
@@ -192,14 +194,14 @@ git rebase -i <hush>/--root
 
 #### git clone
 
-```
+```bash
 # 注意地址是 .git 文件夹的地址
 git clone <remote_address>
 ```
 
 #### git remote
 
-```
+```bash
 # 查看远程服务器
 git remote -v
 
@@ -213,25 +215,25 @@ git rename <old> <new>
 
 #### git fetch
 
-```
+```bash
 git fetch <remote_name> <branch_name>...
 ```
 
 #### git pull
 
-```
+```bash
 git fetch <remote_name> <branch_name>...
 ```
 
 #### git push
 
-```
+```bash
 git fetch <remote_name> <branch_name>...
 ```
 
 注意：push是remote报错，在远端设置：
 
-```
+```bash
 git config receive.denyCurrentBranch ignore
 ```
 
@@ -239,7 +241,7 @@ git config receive.denyCurrentBranch ignore
 
 ### 变更历史提交信息
 
-```
+```bsh
 git rebase -i <father hush>
 ```
 
@@ -257,7 +259,7 @@ git rebase -i <father hush>
 
 其实分支的 hush 本身也是 commit，但是分支的头部 commit 能够代表分支。
 
-```
+```bash
 # 分离头指针
 git commit <commit_hush>
 
@@ -275,7 +277,7 @@ git object 有三类:
 
 ![](./img/commit_tree_blob.png)
 
-```
+```bash
 git cat-file -t <hush>		#查看文件类型
 git cat-file -p <hush>		#查看文件内容
 ```
