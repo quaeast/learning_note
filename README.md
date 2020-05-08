@@ -24,6 +24,12 @@
 
 ### [Maven](./java/maven/main.md)
 
+### [Maven 多包](./java/maven/multiple_package.md)
+
+## Go
+
+### [环境变量和命令](./go/commands_and_environment variables/main.md)
+
 ## OPS
 
 ### [Python requests](./ops/requests/main.md)
@@ -39,4 +45,3 @@
 ## Node
 
 ### [Angular](./node/angular/main.md)
-
