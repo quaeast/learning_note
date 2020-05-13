@@ -28,7 +28,7 @@
 
 ## Go
 
-### [环境变量和命令](./go/commands_and_environment variables/main.md)
+### [环境变量和命令](./go/commands_and_environment_variables/main.md)
 
 ## OPS
 
