@@ -23,6 +23,7 @@ docker run [name/id]
 
 -d 后台
 -p [本机 post]:[docker post]
+-P 打开任意端口
 
 # 运行停止的 container
 docker start [name/id]
@@ -38,6 +39,9 @@ docker rm [name/id]
 
 # 后台运行
 ctrl + pq
+
+# ls
+docker container ls
 ```
 
 ## dockerfile
