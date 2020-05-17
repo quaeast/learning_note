@@ -13,6 +13,19 @@ docker image ls
 
 # 删除本地镜像
 docker image rm [name/id]
+
+# 将运行的 container 提交成 image
+docker commit [hash] [name]
+
+# 编译 Dockerfile
+docker build [dir] -t [name]
+
+# 改名
+docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+
+# push
+docker push name:tag
+
 ```
 
 ## container
