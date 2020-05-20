@@ -1,6 +1,26 @@
 ## 笔记
 
-## Unix
+## Java
+
+### [Jar](./jar/main.md)
+
+### [Jenv](./jenv/main.md)
+
+### [Spring Boot](./spring_boot/main.md)
+
+### [Maven](./maven/main.md)
+
+### [Maven 多包](./maven/multiple_package.md)
+
+## Go
+
+### [环境变量和命令](./go_commands_and_environment_variables/main.md)
+
+## Node
+
+### [Angular](./angular/main.md)
+
+## OPS
 
 ### [ssh](./ssh/main.md)
 
@@ -10,40 +30,16 @@
 
 ### [Sercive](./service/main.md)
 
-### [apt](./ops/apt/main.md)
+### [apt](./apt/main.md)
 
-### [curl](./ops/curl/main.md)
+### [PostgreSql 安装及远程连接](./postgresql/main.md)
 
-## Java
+### [Linux 安装二进制 Node](./linux_install_node/main.md)
 
-### [Jar](./java/jar/main.md)
+### [screen Cannot open your terminal '/dev/pts/1'](./screen_Cannot_open_your_terminal/main.md)
 
-### [Jenv](./java/jenv/main.md)
-
-### [Spring Boot](./java/spring_boot/main.md)
-
-### [Maven](./java/maven/main.md)
-
-### [Maven 多包](./java/maven/multiple_package.md)
-
-## Go
-
-### [环境变量和命令](./go/commands_and_environment_variables/main.md)
-
-## Node
-
-### [Angular](./node/angular/main.md)
-
-## OPS
-
-### [Python requests](./ops/requests/main.md)
-
-### [PostgreSql 安装及远程连接](./ops/postgresql/main.md)
-
-### [Linux 安装二进制 Node](./ops/linux_install_node/main.md)
-
-### [screen Cannot open your terminal '/dev/pts/1'](./ops/screen_Cannot_open_your_terminal/main.md)
-
-### [本地 DNS：解决 github.com 不可访问](./ops/local_dns/main.md)
+### [本地 DNS：解决 github.com 不可访问](./local_dns/main.md)
 
 ### [git fetch 后 rebase 和 merge 区别](./git/fetch_and_merge/main.md)
+
+### [Nginx 静态 HTTP 服务器配置](./nginx_http/main.md)
