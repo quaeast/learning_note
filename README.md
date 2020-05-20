@@ -43,3 +43,6 @@
 ### [git fetch 后 rebase 和 merge 区别](./git/fetch_and_merge/main.md)
 
 ### [Nginx 静态 HTTP 服务器配置](./nginx_http/main.md)
+
+### [Linux 用户管理](/linux_user_management/main.md)
+
