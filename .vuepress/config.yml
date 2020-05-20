@@ -1,0 +1,12 @@
+title: '方子东的 blog'
+markdown:
+  lineNumbers: true
+themeConfig: 
+  sidebarDepth: 3
+  nav:
+    - text: 'GitHub'
+      link: 'https://github.com/quaeast'
+      target: '_blank'
+  sidebar: 'auto'
+  lastUpdated: 'Last Updated'
+  smoothScroll: true
