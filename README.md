@@ -2,15 +2,15 @@
 
 ## Java
 
-### [Jar](./jar/main.md)
-
-### [Jenv](./jenv/main.md)
-
-### [Spring Boot](./spring_boot/main.md)
-
 ### [Maven](./maven/main.md)
 
 ### [Maven 多包](./maven/multiple_package.md)
+
+### [jar](./jar/main.md)
+
+### [jenv](./jenv/main.md)
+
+### [Spring Boot](./spring_boot/main.md)
 
 ## Go
 
@@ -24,11 +24,11 @@
 
 ### [ssh](./ssh/main.md)
 
-### [Git](./git/main.md)
+### [git](./git/main.md)
 
-### [Docker](./docker/main.md)
+### [docker](./docker/main.md)
 
-### [Service](./service/main.md)
+### [service](./service/main.md)
 
 ### [apt](./apt/main.md)
 
