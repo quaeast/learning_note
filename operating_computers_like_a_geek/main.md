@@ -11,6 +11,16 @@
 
 ## 安装相关图形软件
 
+### （Windows）从 app store 安装 windows terminal、ubuntu
+
+[wsl tutorial](https://docs.microsoft.com/zh-cn/windows/wsl/install-win10)
+
+[windows 内核升级助手](https://www.microsoft.com/zh-cn/software-download/windows10ISO)
+
+安装windows terminal 可能需要升级内核版本。
+
+不必要安装wsl2，运行链接1中第一条命令即可重启
+
 ### （Mac）从 app store 安装 xcode，之后安装 xcode command tools
 
 [Xcode-command-tools download](https://developer.apple.com/xcode/resources/)
@@ -23,7 +33,7 @@
 
 [typora download](https://www.typora.io/)
 
-* mac 图形界面软件安装
+* 图形界面软件安装
 * 学会使用 Markdown 记笔记
 
 ## shell / Unix 基本使用 / git 基本使用
