@@ -2,14 +2,25 @@
 
 > 深入理解计算机系统，并熟练操作是所有计算机工作的基础。一个月速成，像极客一样操作计算机。
 
-* Mac 安装相关图形软件
+* 安装相关图形软件
 * shell/UNIX 基本使用 / git 基本使用
 * Python
 * git 基本使用
+* Django
 
 本文默认 Linux 是一种特殊的 Unix，所以通用部分使用 Unix，特殊部分强调 Linux。
 
 ## 安装相关图形软件
+
+### （Windows）从 app store 安装 windows terminal、ubuntu
+
+[wsl tutorial](https://docs.microsoft.com/zh-cn/windows/wsl/install-win10)
+
+[windows 内核升级助手](https://www.microsoft.com/zh-cn/software-download/windows10ISO)
+
+安装windows terminal 可能需要升级内核版本。
+
+不必要安装wsl2，运行链接1中第一条命令即可重启
 
 ### （Mac）从 app store 安装 xcode，之后安装 xcode command tools
 
@@ -23,7 +34,7 @@
 
 [typora download](https://www.typora.io/)
 
-* mac 图形界面软件安装
+* 图形界面软件安装
 * 学会使用 Markdown 记笔记
 
 ## shell / Unix 基本使用 / git 基本使用
@@ -38,9 +49,13 @@
 
 ### 注册GitHub
 
+[github.com](https://github.com/)
+
 ### 配置ssh-key，连接远程服务器（github）
 
 [ssh toturial](https://quaeast.cn/ssh/main.html)
+
+[简明 VIM 练级攻略](https://coolshell.cn/articles/5426.html)
 
 * 理解非对称加密
 * 学会使用命令行软件，理解参数，变量，常量
@@ -88,16 +103,43 @@
 
 ## Git 基本使用
 
-### 注册 GitHub，下载 desktop 客户端
-
-[github.com](https://github.com/)
+### 下载 desktop 客户端
 
 [github desktop download](https://desktop.github.com/)
 
 * 学会创建 Git 项目，上传到 GitHub
 * 学会使用基本的 git 命令
 
-### 将之前的笔记上传到 GitHub
+### 实践：将之前的笔记上传到 GitHub
+
+[git 功能](https://quaeast.cn/git_function_oriented/main.html)
 
 * 使用 GitHub desktop
+* 创建 GitHub 项目
 
+### 使用 vuepress 搭建个人博客
+
+https://vuepress.vuejs.org/guide/#how-it-works
+
+### 使用 nginx 建立静态网站
+
+https://quaeast.cn/nginx_http/main.html
+
+### 购买域名和 ssl 证书，配置 DNS 和 CDN
+
+https://www.cloudflare.com/
+
+* 理解静态网站
+* 初步理解 http
+
+## Django 
+
+https://docs.djangoproject.com/en/3.0/intro/tutorial01/
+
+* 开发简易的 web 应用
+* 阅读文档
+* 语言运用
+* 理解 web
+* 继续理解 http
+
+### 实践：按照 tutorial 搭建 polls
