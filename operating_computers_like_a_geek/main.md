@@ -13,15 +13,15 @@
 
 ### （Mac）从 app store 安装 xcode，之后安装 xcode command tools
 
-https://developer.apple.com/xcode/resources/
+[Xcode-command-tools download](https://developer.apple.com/xcode/resources/)
 
 ### 安装 vscode
 
-https://code.visualstudio.com/
+[vscode download](https://code.visualstudio.com/)
 
 ### 安装 typora
 
-https://www.typora.io/
+[typora download](https://www.typora.io/)
 
 * mac 图形界面软件安装
 * 学会使用 Markdown 记笔记
@@ -30,9 +30,9 @@ https://www.typora.io/
 
 ### 安装 git
 
-https://git-scm.com/downloads
+[git download](https://git-scm.com/downloads)
 
-https://quaeast.cn/apt/main.html
+[apt commands](https://quaeast.cn/apt/main.html)
 
 * 学会使用包管理软件 brew/apt/yum
 
@@ -40,7 +40,7 @@ https://quaeast.cn/apt/main.html
 
 ### 配置ssh-key，连接远程服务器（github）
 
-https://quaeast.cn/ssh/main.html#%E5%AE%A2%E6%88%B7%E7%AB%AF
+[ssh toturial](https://quaeast.cn/ssh/main.html)
 
 * 理解非对称加密
 * 学会使用命令行软件，理解参数，变量，常量
@@ -49,7 +49,7 @@ https://quaeast.cn/ssh/main.html#%E5%AE%A2%E6%88%B7%E7%AB%AF
 
 ### 安装 zsh/oh-my-zsh
 
-https://ohmyz.sh/
+[install zsh](https://ohmyz.sh/)
 
 * 理解什么是 shell
 * 理解 Unix 目录结构
@@ -60,9 +60,9 @@ https://ohmyz.sh/
 
 ### 实践：购买阿里云 Linux 服务器，并搭建自己的vpn
 
-https://www.aliyun.com/?utm_content=se_1000301881
+[aliyu](https://www.aliyun.com/?utm_content=se_1000301881)
 
-https://github.com/hwdsl2/setup-ipsec-vpn
+[ipsec setup](https://github.com/hwdsl2/setup-ipsec-vpn)
 
 * 学会使用 ssh 连接服务器
 
@@ -70,7 +70,7 @@ https://github.com/hwdsl2/setup-ipsec-vpn
 
 ### 安装 Anaconda
 
-https://www.anaconda.com/
+[anaconda download](https://www.anaconda.com/)
 
 * 配置 .zshrc/.bashrc，复习环境变量的概念
 * conda 环境管理
@@ -79,7 +79,7 @@ https://www.anaconda.com/
 
 ### 基础 Python 语法
 
-https://www.liaoxuefeng.com/wiki/1016959663602400
+[python torurial](https://www.liaoxuefeng.com/wiki/1016959663602400)
 
 * 变量（深刻理解类型）
 * 流程控制（分支，循环）
@@ -90,9 +90,9 @@ https://www.liaoxuefeng.com/wiki/1016959663602400
 
 ### 注册 GitHub，下载 desktop 客户端
 
-https://github.com/
+[github.com](https://github.com/)
 
-https://desktop.github.com/
+[github desktop download](https://desktop.github.com/)
 
 * 学会创建 Git 项目，上传到 GitHub
 * 学会使用基本的 git 命令
