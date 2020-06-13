@@ -119,27 +119,28 @@
 
 ### 使用 vuepress 搭建个人博客
 
-https://vuepress.vuejs.org/guide/#how-it-works
+[vuepress tutorial](https://vuepress.vuejs.org/guide/#how-it-works)
 
 ### 使用 nginx 建立静态网站
 
-https://quaeast.cn/nginx_http/main.html
+[nginx 建立静态网站](https://quaeast.cn/nginx_http/main.html)
 
 ### 购买域名和 ssl 证书，配置 DNS 和 CDN
 
-https://www.cloudflare.com/
+[cloud flare](https://www.cloudflare.com/)
 
+* 学会阅读技术文档
 * 理解静态网站
 * 初步理解 http
 
 ## Django 
 
-https://docs.djangoproject.com/en/3.0/intro/tutorial01/
+### 实践：按照 tutorial 搭建 polls
+
+[Django tutorial](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
 
 * 开发简易的 web 应用
-* 阅读文档
-* 语言运用
+* python 语言运用
 * 理解 web
-* 继续理解 http
+* 进一步理解 http
 
-### 实践：按照 tutorial 搭建 polls
