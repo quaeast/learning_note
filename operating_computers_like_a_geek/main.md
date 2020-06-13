@@ -1,8 +1,8 @@
 # Operating Computers Like a Geek
 
-> 核心内容：在 shell 层理解 Unix ，实践静态和动态 web，入门 B/S 架构。
-
 ![Feynman](./img/Feynman.png)
+
+> 核心内容：在 shell 层理解 Unix ，实践静态和动态 web，入门 B/S 架构。
 
 * 安装相关图形软件
 * shell / UNIX 基本使用，git 基本使用
