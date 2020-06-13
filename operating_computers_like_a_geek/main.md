@@ -1,9 +1,11 @@
 # Operating Computers Like a Geek
 
-> 深入理解计算机系统，并熟练操作是所有计算机工作的基础。一个月速成，像极客一样操作计算机。
+> 核心内容：在 shell 层理解 Unix ，实践静态和动态 web，入门 B/S 架构。
+
+![Feynman](./img/Feynman.png)
 
 * 安装相关图形软件
-* shell/UNIX 基本使用 / git 基本使用
+* shell / UNIX 基本使用，git 基本使用
 * Python
 * git 基本使用
 * Django
@@ -18,9 +20,9 @@
 
 [windows 内核升级助手](https://www.microsoft.com/zh-cn/software-download/windows10ISO)
 
-安装windows terminal 可能需要升级内核版本。
+安装 windows terminal 可能需要升级内核版本。
 
-不必要安装wsl2，运行链接1中第一条命令即可重启
+不必要安装 wsl2，运行链接 1 中第一条命令即可重启
 
 ### （Mac）从 app store 安装 xcode，之后安装 xcode command tools
 
@@ -37,7 +39,7 @@
 * 图形界面软件安装
 * 学会使用 Markdown 记笔记
 
-## shell / Unix 基本使用 / git 基本使用
+## shell / Unix 基本使用，git 基本使用
 
 ### 安装 git
 
@@ -121,17 +123,30 @@
 
 [vuepress tutorial](https://vuepress.vuejs.org/guide/#how-it-works)
 
+[YAML 语言教程](http://www.ruanyifeng.com/blog/2016/07/yaml.html)
+
+[Linux 用户管理](https://quaeast.cn/linux_user_management/main.html)
+
+* 尝试阅读技术文档
+* 实践 Linux 用户管理
+* Linux 手动安装 node（复习目录结构、环境变量、文件概念……）
+* 理解 node，学会使用 npm
+* 理解 json/yml 等配置文件格式
+
 ### 使用 nginx 建立静态网站
 
 [nginx 建立静态网站](https://quaeast.cn/nginx_http/main.html)
+
+* 理解静态网站
+* 理解服务器
+* 初步理解 http
 
 ### 购买域名和 ssl 证书，配置 DNS 和 CDN
 
 [cloud flare](https://www.cloudflare.com/)
 
-* 学会阅读技术文档
-* 理解静态网站
-* 初步理解 http
+* 尝试阅读技术文档
+* 初步理解 https，复习非对称加密
 
 ## Django 
 
