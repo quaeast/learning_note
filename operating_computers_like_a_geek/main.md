@@ -69,7 +69,7 @@
 
 ### 配置ssh-key，连接远程服务器（github）
 
-[ssh toturial](https://quaeast.cn/ssh/main.html)
+[ssh tutorial](https://quaeast.cn/ssh/main.html)
 
 [简明 VIM 练级攻略](https://coolshell.cn/articles/5426.html)
 
@@ -106,7 +106,7 @@ git 作为版本控制工具，也是非常重要团队协作工具。操作好 
 
 ### 实践：购买阿里云 Linux 服务器，并搭建自己的vpn
 
-[aliyu](https://www.aliyun.com/?utm_content=se_1000301881)
+[aliyun](https://www.aliyun.com/?utm_content=se_1000301881)
 
 [ipsec setup](https://github.com/hwdsl2/setup-ipsec-vpn)
 
@@ -182,3 +182,6 @@ Python/Golang 是当前微服务模式的主流开发语言，RESTful API 的开
 * 理解 MVC 模式
 * 理解服务器渲染和前端渲染的区别
 
+## 完结
+
+本教程偏向动手，没有涉及计算机科学的压箱底绝活：数据结构，算法，编译等。目标是理解计算机系统、培养动手能力和阅读文档的能力。
