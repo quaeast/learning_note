@@ -154,8 +154,16 @@
 
 [Django tutorial](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
 
+[MVC，MVP 和 MVVM 的图示](http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html)
+
+模板语言（后端渲染页面）技术已经不是当前主流，目前的单网页应用都是采用 REST/Ajax 等技术进行前后端分离开发。这个实践的目的是理解动态网站和 MVC 模式。
+
+Python/Golang 是当前微服务模式的主流开发语言，RESTful API 的开发其实大同小异。
+
 * 开发简易的 web 应用
 * python 语言运用
 * 理解 web
 * 进一步理解 http
+* 理解 MVC 模式
+* 理解服务器渲染和前端渲染的区别
 
