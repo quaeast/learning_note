@@ -7,8 +7,8 @@
 * 安装相关图形软件
 * shell / UNIX 基本使用，git 基本使用
 * Python
-* git 基本使用
-* Django
+* 搭建静态网站：VuePress
+* 搭建动态网站：Django
 
 本文默认 Linux 是一种特殊的 Unix，所以通用部分使用 Unix，特殊部分强调 Linux。
 
@@ -41,6 +41,16 @@
 
 ## shell / Unix 基本使用，git 基本使用
 
+### 安装 zsh/oh-my-zsh
+
+[install zsh](https://ohmyz.sh/)
+
+* 理解什么是 shell
+* 理解 Unix 目录结构
+* 理解环境变量和 .bashrc/.zshrc
+* 理解一切皆文件
+* 理解 Linux 用户和权限控制
+
 ### 安装 git
 
 [git download](https://git-scm.com/downloads)
@@ -53,6 +63,10 @@
 
 [github.com](https://github.com/)
 
+[Github Desktop](https://desktop.github.com/)
+
+* 安装 GitHub Desktop
+
 ### 配置ssh-key，连接远程服务器（github）
 
 [ssh toturial](https://quaeast.cn/ssh/main.html)
@@ -64,16 +78,31 @@
 * vim 基本使用
 * 理解 Unix 系统文件权限（秘钥权限）
 
-### 安装 zsh/oh-my-zsh
+### 实践：将之前的笔记用 git repo 保管，并上传到 github
 
-[install zsh](https://ohmyz.sh/)
+[Reference Manual](https://git-scm.com/docs)
 
-* 理解什么是 shell
-* 理解 Unix 目录结构
-* 理解环境变量和 .bashrc/.zshrc
-* 理解一切皆文件
-* 理解 Linux 用户和权限控制
+[Pro Git book](https://git-scm.com/book/en/)
 
+[极客时间 git 视频教程（完整版我买过，可以管我要）](https://www.bilibili.com/video/BV1mJ411X7E8?from=search&seid=11155582492233674745)
+
+[我的 git 笔记（比较繁琐）](https://quaeast.cn/git/main.html#%E4%B8%AA%E4%BA%BA%E5%B7%A5%E4%BD%9C)
+
+[git 功能](https://quaeast.cn/git_function_oriented/main.html)
+
+git 作为版本控制工具，也是非常重要团队协作工具。操作好 git 是技术人员的底线。推荐观看视频教程了解基本操作，深入了解可阅读《Pro Git》，权威参考见官方文档。
+
+个人操作需掌握如下子命令：
+
+* git init
+* git add
+* git commit
+* git status
+* git log
+* git checkout
+* git reset
+* git push
+* git fetch/rebase/merge
 
 ### 实践：购买阿里云 Linux 服务器，并搭建自己的vpn
 
@@ -103,21 +132,7 @@
 * 函数
 * 类
 
-## Git 基本使用
-
-### 下载 desktop 客户端
-
-[github desktop download](https://desktop.github.com/)
-
-* 学会创建 Git 项目，上传到 GitHub
-* 学会使用基本的 git 命令
-
-### 实践：将之前的笔记上传到 GitHub
-
-[git 功能](https://quaeast.cn/git_function_oriented/main.html)
-
-* 使用 GitHub desktop
-* 创建 GitHub 项目
+## 搭建静态网站：VuePress
 
 ### 使用 vuepress 搭建个人博客
 
@@ -148,7 +163,7 @@
 * 尝试阅读技术文档
 * 初步理解 https，复习非对称加密
 
-## Django 
+## 搭建动态网站：Django
 
 ### 实践：按照 tutorial 搭建 polls
 
