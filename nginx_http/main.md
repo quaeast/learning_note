@@ -26,7 +26,7 @@ server {
 	}
 	
 	location /home {
-		alias /home/fang/learning_note/.vuepress/dist;
+		alias /home/fang/learning_note/.vuepress/dist/;
 		index index.html;
 	}
 }
@@ -35,6 +35,8 @@ server {
 ### root 和 alias 的区别
 
 可以通过字面意思理解，root 就是指出 location 后的路径的父(根)路径，而 alias 是用 alias 后声明的路径替换 location 后声明的路径。
+
+**注意，alisa 后边要加 / **
 
 ### 测试
 
