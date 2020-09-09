@@ -27,6 +27,12 @@ class Solution {
                     pmt.add(j);
                     i++;
                 } else {
+                //01012
+                //aabaaac     i=5
+                //   aabaaac  j=2
+                //下面一行可以这样理解:
+                //在以下的 aaa 与 aab 已经不相同了，
+                //此时的子串位移量应参照 aa 的对称性，所以是 pmt[j-1]
                     j = pmt.get(j-1);
                 }
             } else {
