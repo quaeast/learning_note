@@ -52,6 +52,8 @@
 
 ### [Operating Computers Like a Geek](./operating_computers_like_a_geek/main.md)
 
+### [环境变量（XDG Base Directory）](./XDG/main.md)
+
 ## 算法
 
 ### [kmp](./kmp/main.md)
