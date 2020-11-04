@@ -6,9 +6,15 @@ HTTP 本身是无状态协议，借助 cookie 和 session 记录状态。
 
 ## 传输层（TCP/UDP）
 
-### TCP（）
+### TCP
 
+三次握手：
 
+![handshake](./img/handshake.png)
+
+四次挥手：
+
+![break up](./img/break_up.png)
 
 ### UDP
 
