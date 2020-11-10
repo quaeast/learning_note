@@ -49,7 +49,7 @@ Host da
 ~/.ssh/authorized_keys
 ```
 
-### 配置选项
+### 配置选项 /etc/ssh/sshd_config
 
 ```
 # 秘钥登录
