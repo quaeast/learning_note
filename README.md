@@ -12,6 +12,14 @@
 
 ### [Spring Boot](./spring_boot/main.md)
 
+## Git
+
+### [git](./git/main.md)
+
+### [git 功能](./git_function_oriented/main.md)
+
+### [git 暂时忽略本地配置](./git_ignore_local_config/main.md)
+
 ## Go
 
 ### [环境变量和命令](./go_commands_and_environment_variables/main.md)
@@ -23,10 +31,6 @@
 ## OPS
 
 ### [ssh](./ssh/main.md)
-
-### [git](./git/main.md)
-
-### [git 功能](./git_function_oriented/main.md)
 
 ### [docker](./docker/main.md)
 
