@@ -38,7 +38,7 @@ remote_port = 6000
 启动命令：
 
 ```shell
-frps -c frps.ini
+frpc -c frpc.ini
 ```
 
 ### 将程序挂在 systemd
