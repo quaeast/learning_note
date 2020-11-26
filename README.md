@@ -32,6 +32,8 @@
 
 ### [ssh](./ssh/main.md)
 
+### [frp](./frp/main.md)
+
 ### [docker](./docker/main.md)
 
 ### [service](./service/main.md)
