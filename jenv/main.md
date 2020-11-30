@@ -14,7 +14,7 @@
 
 ### brew
 
-```zsh
+```bash
 brew install jenv
 ```
 
@@ -24,7 +24,7 @@ brew install jenv
 
 [jenv.be](https://www.jenv.be/)
 
-```zsh
+```bash
 git clone https://github.com/gcuisinier/jenv.git ~/.jenv
 ```
 
@@ -39,7 +39,7 @@ eval "$(jenv init -)"
 
 ## jenv 使用
 
-```zsh
+```bash
 # 添加
 jenv add /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
 
@@ -73,7 +73,7 @@ jenv enable-plugin export
 ## 在使用 jenv 切换版本后 mvn -v 显示的 java 版本并不会改变，这是怎么回事呢？
 
 
-```zsh
+```bash
 ➜  .m2 mvn -v
 Apache Maven 3.6.2 (40f52333136460af0dc0d7232c0dc0bcf0d9e117; 2019-08-27T23:06:16+08:00)
 Maven home: /usr/local/Cellar/maven/3.6.2/libexec

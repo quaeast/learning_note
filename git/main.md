@@ -241,7 +241,7 @@ git config receive.denyCurrentBranch ignore
 
 ### 变更历史提交信息
 
-```bsh
+```bash
 git rebase -i <father hush>
 ```
 

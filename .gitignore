@@ -1,3 +1,4 @@
 /img/geet_time.pdf
 .DS_Store
 /.vuepress/dist/
+.idea/
