@@ -36,11 +36,14 @@ public class Main{
 
 ### 编译代码
 
+**这里注意，一定要在末尾多留一行**
+
 ```bash
 javac src/cn/quaeast/Main.java
+
 ```
 
-### 创建 MANIFES.MF
+### 创建 MANIFEST.MF
 
 ```bash
 touch MANIFEST.MF
@@ -58,7 +61,7 @@ Main-Class: cn.quaeast.Main
 # 类似于 tar 命令, 这里的 `-f` 和 `-m` 与后面的参数对应
 # `f` 对应 jar 文件, `m` 对应 MANIFEST.MF 文件。
 cd src
-jar -cvfm main.jar MANIFESR.MF .
+jar -cvfm main.jar MANIFEST.MF .
 ```
 
 ## 运行

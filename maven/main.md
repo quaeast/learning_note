@@ -176,3 +176,5 @@ Hello World!
 mvn test
 ```
 
+##[打包插件](https://github.com/quaeast/java_web_demo/tree/main/jdbc)
+
