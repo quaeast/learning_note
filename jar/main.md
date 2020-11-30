@@ -30,13 +30,9 @@ public class Main{
 }
 ```
 
-
-
 ## 打包
 
 ### 编译代码
-
-**这里注意，一定要在末尾多留一行**
 
 ```bash
 javac src/cn/quaeast/Main.java
@@ -51,8 +47,11 @@ touch MANIFEST.MF
 
 内容
 
+**这里注意，一定要在末尾多留一行**
+
 ```
 Main-Class: cn.quaeast.Main
+
 ```
 
 ### 打包
