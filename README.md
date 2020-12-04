@@ -54,6 +54,8 @@
 
 ### [Nginx 静态 HTTP 服务器配置](./nginx_http/main.md)
 
+### [Nginx proxy](./nginx_proxy/main.md)
+
 ### [Linux 用户管理](/linux_user_management/main.md)
 
 ### [Operating Computers Like a Geek](./operating_computers_like_a_geek/main.md)
