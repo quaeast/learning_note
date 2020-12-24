@@ -38,3 +38,14 @@ jobs:
       - name: Build vuepress project
         run: |
           vuepress build
+      name: scp files
+      - name: copy file via ssh password
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HK_SERVER_IP }}
+          username: ${{ secrets.HK_SERVER_USER_NAME }}
+          key: ${{ secrets.HK_SERVER_PRIVATE_KEY }}
+          port: 22
+          source: ".vuepress/dist"
+          target: "vuepress_dist"
+        
