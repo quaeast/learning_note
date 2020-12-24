@@ -31,10 +31,10 @@ jobs:
           node-version: '10.x'
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Install vuepress
         run: npm install -g vuepress 
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Build vuepress project
         run: |
           vuepress build
