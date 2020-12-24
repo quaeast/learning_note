@@ -36,10 +36,8 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Build vuepress project
-        run: |
-          vuepress build
-      name: scp files
-      - name: copy file via ssh password
+        run: vuepress build
+      - name: copy dist to server
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HK_SERVER_IP }}
