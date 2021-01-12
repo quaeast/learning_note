@@ -8,7 +8,7 @@
 
 ### [jar](./jar/main.md)
 
-### [jenv](./jenv/main.md)
+### [jEnv](./jenv/main.md)
 
 ### [Spring Boot](./spring_boot/main.md)
 
